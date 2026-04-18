@@ -1,4 +1,4 @@
-# Course Schedule Generator (LLM Demo)
+# Course Schedule Generator
 
 Simple full-stack web app for generating and optimizing a weekly course schedule.
 
@@ -42,10 +42,10 @@ Frontend runs on `http://localhost:5173`.
 Backend (`backend/.env`):
 
 - `PORT=3001` (optional)
-- `OPENAI_API_KEY=your_key_here` (required for live chatbot responses)
+- `OPENAI_API_KEY= your_key_here` (required for live chatbot responses)
 - `OPENAI_MODEL=gpt-4.1-mini` (optional)
 
-If `OPENAI_API_KEY` is missing, `/chat` returns a helpful fallback response instead of failing.
+If `OPENAI_API_KEY` is missing, `/chat` returns a fallback response instead of failing.
 
 ## Core Features Implemented
 
@@ -53,4 +53,4 @@ If `OPENAI_API_KEY` is missing, `/chat` returns a helpful fallback response inst
 - Add course by course number (default section auto-selected)
 - Section picker per added course
 - Schedule optimization (`packed` vs `spread`) using random search and overlap penalties
-- Floating chatbot with backend LLM integration
+- Chatbot with backend LLM integration
